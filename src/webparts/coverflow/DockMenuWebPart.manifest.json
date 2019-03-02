@@ -1,6 +1,5 @@
 {
-  "$schema": "../../../node_modules/@microsoft/sp-module-interfaces/lib/manifestSchemas/jsonSchemas/clientSideComponentManifestSchema.json",
-
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
   "id": "b63ccc15-cc2a-479c-ae83-510474c79c88",
   "alias": "coverflow",
   "componentType": "WebPart",

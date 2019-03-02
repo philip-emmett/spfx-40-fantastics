@@ -1,6 +1,5 @@
 {
-  "$schema": "../../../node_modules/@microsoft/sp-module-interfaces/lib/manifestSchemas/jsonSchemas/clientSideComponentManifestSchema.json",
-
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
   "id": "4fae8f7d-099d-44b6-8450-17312bb0b275",
   "alias": "TilesGallery",
   "componentType": "WebPart",

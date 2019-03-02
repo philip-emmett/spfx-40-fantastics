@@ -1,6 +1,5 @@
 {
-  "$schema": "../../../node_modules/@microsoft/sp-module-interfaces/lib/manifestSchemas/jsonSchemas/clientSideComponentManifestSchema.json",
-
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
   "id": "f6adeeb5-6e0c-46e8-a2e3-88b193b6c424",
   "alias": "NewsSlider",
   "componentType": "WebPart",

@@ -1,6 +1,5 @@
 {
-  "$schema": "../../../node_modules/@microsoft/sp-module-interfaces/lib/manifestSchemas/jsonSchemas/clientSideComponentManifestSchema.json",
-
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
   "id": "438e1c92-f33f-4952-aa36-add7530b6937",
   "alias": "SocialPhotoStream",
   "componentType": "WebPart",

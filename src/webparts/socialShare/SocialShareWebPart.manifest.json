@@ -1,6 +1,5 @@
 {
-  "$schema": "../../../node_modules/@microsoft/sp-module-interfaces/lib/manifestSchemas/jsonSchemas/clientSideComponentManifestSchema.json",
-
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
   "id": "74ebd2e5-98b8-46cf-89a1-cacef2f52203",
   "alias": "SocialShare",
   "componentType": "WebPart",
