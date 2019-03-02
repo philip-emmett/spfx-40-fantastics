@@ -1,0 +1,47 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.2/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.2",
+  "packageName": "Audio Equalizer",
+  "id": "e762c85a-f068-4067-a8c0-b5cdbf4fcce7",
+  "version": "0.1",
+  "developer": {
+    "name": "SPFx + Teams Dev",
+    "websiteUrl": "https://products.office.com/en-us/sharepoint/collaboration",
+    "privacyUrl": "https://privacy.microsoft.com/en-us/privacystatement",
+    "termsOfUseUrl": "https://www.microsoft.com/en-us/servicesagreement"
+  },
+  "name": {
+    "short": "Audio Equalizer"
+  },
+  "description": {
+    "short": "Instead of the classic audio player, you can use a fun player with an equalizer. The equalizer adds an effect on music that drives your page and the user experience. You can configure your equalizer by modifying the columns, color, speed, etc.",
+    "full": "Instead of the classic audio player, you can use a fun player with an equalizer. The equalizer adds an effect on music that drives your page and the user experience. You can configure your equalizer by modifying the columns, color, speed, etc."
+  },
+  "icons": {
+    "outline": "tab20x20.png",
+    "color": "tab96x96.png"
+  },
+  "accentColor": "#004578",
+  "configurableTabs": [
+    {
+      "configurationUrl": "https://{teamSiteDomain}{teamSitePath}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest={teamSitePath}/_layouts/15/teamshostedapp.aspx%3FopenPropertyPane=true%26teams%26componentId=e762c85a-f068-4067-a8c0-b5cdbf4fcce7",
+      "canUpdateConfiguration": true,
+      "scopes": [
+        "team"
+      ]
+    }
+  ],
+  "validDomains": [
+    "*.login.microsoftonline.com",
+    "*.sharepoint.com",
+    "*.sharepoint-df.com",
+    "spoppe-a.akamaihd.net",
+    "spoprod-a.akamaihd.net",
+    "resourceseng.blob.core.windows.net",
+    "msft.spoppe.com"
+  ],
+  "webApplicationInfo": {
+    "resource": "https://{teamSiteDomain}",
+    "id": "00000003-0000-0ff1-ce00-000000000000"
+  }
+}

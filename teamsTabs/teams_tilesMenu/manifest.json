@@ -1,0 +1,47 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.2/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.2",
+  "packageName": "Tiles Menu",
+  "id": "ee6ccc68-d0ec-456c-8968-08a705191cf1",
+  "version": "0.1",
+  "developer": {
+    "name": "SPFx + Teams Dev",
+    "websiteUrl": "https://products.office.com/en-us/sharepoint/collaboration",
+    "privacyUrl": "https://privacy.microsoft.com/en-us/privacystatement",
+    "termsOfUseUrl": "https://www.microsoft.com/en-us/servicesagreement"
+  },
+  "name": {
+    "short": "Tiles Menu"
+  },
+  "description": {
+    "short": "This Web Part allows you to very easily create a menu in form of tiles that is responsive and adapted for mobile. You can directly manage the items on your menu, with a title, an image and manage Visual rendering options.",
+    "full": "This Web Part allows you to very easily create a menu in form of tiles that is responsive and adapted for mobile. You can directly manage the items on your menu, with a title, an image and manage Visual rendering options."
+  },
+  "icons": {
+    "outline": "tab20x20.png",
+    "color": "tab96x96.png"
+  },
+  "accentColor": "#004578",
+  "configurableTabs": [
+    {
+      "configurationUrl": "https://{teamSiteDomain}{teamSitePath}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest={teamSitePath}/_layouts/15/teamshostedapp.aspx%3FopenPropertyPane=true%26teams%26componentId=ee6ccc68-d0ec-456c-8968-08a705191cf1",
+      "canUpdateConfiguration": true,
+      "scopes": [
+        "team"
+      ]
+    }
+  ],
+  "validDomains": [
+    "*.login.microsoftonline.com",
+    "*.sharepoint.com",
+    "*.sharepoint-df.com",
+    "spoppe-a.akamaihd.net",
+    "spoprod-a.akamaihd.net",
+    "resourceseng.blob.core.windows.net",
+    "msft.spoppe.com"
+  ],
+  "webApplicationInfo": {
+    "resource": "https://{teamSiteDomain}",
+    "id": "00000003-0000-0ff1-ce00-000000000000"
+  }
+}

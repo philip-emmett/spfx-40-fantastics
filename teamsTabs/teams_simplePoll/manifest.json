@@ -1,0 +1,47 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.2/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.2",
+  "packageName": "Simple Poll",
+  "id": "47b0d836-1229-4d96-99bd-8c094c3a824c",
+  "version": "0.1",
+  "developer": {
+    "name": "SPFx + Teams Dev",
+    "websiteUrl": "https://products.office.com/en-us/sharepoint/collaboration",
+    "privacyUrl": "https://privacy.microsoft.com/en-us/privacystatement",
+    "termsOfUseUrl": "https://www.microsoft.com/en-us/servicesagreement"
+  },
+  "name": {
+    "short": "Simple Poll"
+  },
+  "description": {
+    "short": "Insert a simple poll (one question) based on a SharePoint survey list. This Web Part is perfect for simple surveys to insert on a homepage for example. Users can vote in 1 click and see the results in the form of a pie or bar chart.",
+    "full": "Insert a simple poll (one question) based on a SharePoint survey list. This Web Part is perfect for simple surveys to insert on a homepage for example. Users can vote in 1 click and see the results in the form of a pie or bar chart."
+  },
+  "icons": {
+    "outline": "tab20x20.png",
+    "color": "tab96x96.png"
+  },
+  "accentColor": "#004578",
+  "configurableTabs": [
+    {
+      "configurationUrl": "https://{teamSiteDomain}{teamSitePath}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest={teamSitePath}/_layouts/15/teamshostedapp.aspx%3FopenPropertyPane=true%26teams%26componentId=47b0d836-1229-4d96-99bd-8c094c3a824c",
+      "canUpdateConfiguration": true,
+      "scopes": [
+        "team"
+      ]
+    }
+  ],
+  "validDomains": [
+    "*.login.microsoftonline.com",
+    "*.sharepoint.com",
+    "*.sharepoint-df.com",
+    "spoppe-a.akamaihd.net",
+    "spoprod-a.akamaihd.net",
+    "resourceseng.blob.core.windows.net",
+    "msft.spoppe.com"
+  ],
+  "webApplicationInfo": {
+    "resource": "https://{teamSiteDomain}",
+    "id": "00000003-0000-0ff1-ce00-000000000000"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.2/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.2",
+  "packageName": "Slider Gallery",
+  "id": "3f3e8f3d-033d-34b6-8450-17312bb0b275",
+  "version": "0.1",
+  "developer": {
+    "name": "SPFx + Teams Dev",
+    "websiteUrl": "https://products.office.com/en-us/sharepoint/collaboration",
+    "privacyUrl": "https://privacy.microsoft.com/en-us/privacystatement",
+    "termsOfUseUrl": "https://www.microsoft.com/en-us/servicesagreement"
+  },
+  "name": {
+    "short": "Slider Gallery"
+  },
+  "description": {
+    "short": "This Web Part allows you to view your photo galleries in the form of a slider between the images. Photos automatically scroll with the effect of your choice. The user can click on the arrows or use the touch features to navigate through the images. On click, the image is opened in full screen.",
+    "full": "This Web Part allows you to view your photo galleries in the form of a slider between the images. Photos automatically scroll with the effect of your choice. The user can click on the arrows or use the touch features to navigate through the images. On click, the image is opened in full screen."
+  },
+  "icons": {
+    "outline": "tab20x20.png",
+    "color": "tab96x96.png"
+  },
+  "accentColor": "#004578",
+  "configurableTabs": [
+    {
+      "configurationUrl": "https://{teamSiteDomain}{teamSitePath}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest={teamSitePath}/_layouts/15/teamshostedapp.aspx%3FopenPropertyPane=true%26teams%26componentId=3f3e8f3d-033d-34b6-8450-17312bb0b275",
+      "canUpdateConfiguration": true,
+      "scopes": [
+        "team"
+      ]
+    }
+  ],
+  "validDomains": [
+    "*.login.microsoftonline.com",
+    "*.sharepoint.com",
+    "*.sharepoint-df.com",
+    "spoppe-a.akamaihd.net",
+    "spoprod-a.akamaihd.net",
+    "resourceseng.blob.core.windows.net",
+    "msft.spoppe.com"
+  ],
+  "webApplicationInfo": {
+    "resource": "https://{teamSiteDomain}",
+    "id": "00000003-0000-0ff1-ce00-000000000000"
+  }
+}

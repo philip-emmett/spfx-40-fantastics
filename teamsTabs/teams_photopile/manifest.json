@@ -1,0 +1,47 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.2/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.2",
+  "packageName": "Photopile",
+  "id": "44a6136a-dcc5-45dd-95a6-747430624042",
+  "version": "0.1",
+  "developer": {
+    "name": "SPFx + Teams Dev",
+    "websiteUrl": "https://products.office.com/en-us/sharepoint/collaboration",
+    "privacyUrl": "https://privacy.microsoft.com/en-us/privacystatement",
+    "termsOfUseUrl": "https://www.microsoft.com/en-us/servicesagreement"
+  },
+  "name": {
+    "short": "Photopile"
+  },
+  "description": {
+    "short": "From a SharePoint library, this Web Part generates a stack of photos on a table effect. This gives an aspect of photo gallery of Polaroid, for example. Click on the photos to enlarge to full screen.",
+    "full": "From a SharePoint library, this Web Part generates a stack of photos on a table effect. This gives an aspect of photo gallery of Polaroid, for example. Click on the photos to enlarge to full screen."
+  },
+  "icons": {
+    "outline": "tab20x20.png",
+    "color": "tab96x96.png"
+  },
+  "accentColor": "#004578",
+  "configurableTabs": [
+    {
+      "configurationUrl": "https://{teamSiteDomain}{teamSitePath}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest={teamSitePath}/_layouts/15/teamshostedapp.aspx%3FopenPropertyPane=true%26teams%26componentId=44a6136a-dcc5-45dd-95a6-747430624042",
+      "canUpdateConfiguration": true,
+      "scopes": [
+        "team"
+      ]
+    }
+  ],
+  "validDomains": [
+    "*.login.microsoftonline.com",
+    "*.sharepoint.com",
+    "*.sharepoint-df.com",
+    "spoppe-a.akamaihd.net",
+    "spoprod-a.akamaihd.net",
+    "resourceseng.blob.core.windows.net",
+    "msft.spoppe.com"
+  ],
+  "webApplicationInfo": {
+    "resource": "https://{teamSiteDomain}",
+    "id": "00000003-0000-0ff1-ce00-000000000000"
+  }
+}
