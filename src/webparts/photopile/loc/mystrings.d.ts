@@ -4,7 +4,7 @@
  *
  * Author: Olivier Carpentier
  */
-declare interface IStrings {
+declare interface IPhotoPileStrings {
   //Generic labels
   PropertyPaneDescription: string;
   ErrorSelectList: string;
@@ -53,7 +53,7 @@ declare interface IStrings {
   AutoplaySpeedFieldLabel: string;
 }
 
-declare module 'mystrings' {
-  const strings: IStrings;
+declare module 'PhotoPileStrings' {
+  const strings: IPhotoPileStrings;
   export = strings;
 }

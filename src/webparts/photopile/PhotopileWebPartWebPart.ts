@@ -18,7 +18,7 @@ import {
 } from '@microsoft/sp-webpart-base';
 import { Version } from '@microsoft/sp-core-library';
 
-import * as strings from 'mystrings';
+import * as strings from 'PhotoPileStrings';
 import { IPhotopileWebPartProps } from './IPhotopileWebPartProps';
 import PhotopileWebPart from './components/PhotopileWebPart';
 import { IPhotopileWebPartWebPartProps } from './IPhotopileWebPartWebPartProps';
