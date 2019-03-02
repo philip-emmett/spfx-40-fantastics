@@ -107,11 +107,11 @@ export default class PieChartWebPart extends BaseClientSideWebPart<IPieChartWebP
         }
       };
       var ctx = document.getElementById(this.guid);
-      new Chart(ctx, {
+      /*new Chart(ctx, {
           type: 'pie',
           data: data,
           options: options
-      });
+      });*/
 
   }
 

@@ -105,11 +105,11 @@ export default class PolarChartWebPart extends BaseClientSideWebPart<IPolarChart
         }
       };
       var ctx = document.getElementById(this.guid);
-      new Chart(ctx, {
+      /*new Chart(ctx, {
           type: 'polarArea',
           data: data,
           options: options
-      });
+      });*/
 
   }
 

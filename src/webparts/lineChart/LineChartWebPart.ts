@@ -119,11 +119,11 @@ export default class LineChartWebPart extends BaseClientSideWebPart<ILineChartWe
         }*/
       };
       var ctx = document.getElementById(this.guid);
-      new Chart(ctx, {
+      /*new Chart(ctx, {
           type: 'line',
           data: data,
           options: options
-      });
+      });*/
 
   }
 

@@ -108,7 +108,8 @@ export default class MessageBarWebPart extends BaseClientSideWebPart<IMessageBar
                   disableReactivePropertyChanges: this.disableReactivePropertyChanges,
                   properties: this.properties,
                   key: 'messageBarIconField'
-                }),
+                })
+                /*,
                 PropertyFieldRichTextBox('text', {
                   label: strings.Text,
                   initialValue: this.properties.text,
@@ -120,7 +121,7 @@ export default class MessageBarWebPart extends BaseClientSideWebPart<IMessageBar
                   disableReactivePropertyChanges: this.disableReactivePropertyChanges,
                   properties: this.properties,
                   key: 'messageBarRichTextBoxField'
-                })
+                })*/
               ]
             },
             {

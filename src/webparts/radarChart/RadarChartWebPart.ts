@@ -119,11 +119,11 @@ export default class RadarChartWebPart extends BaseClientSideWebPart<IRadarChart
         }*/
       };
       var ctx = document.getElementById(this.guid);
-      new Chart(ctx, {
+      /*new Chart(ctx, {
           type: 'radar',
           data: data,
           options: options
-      });
+      });*/
 
   }
 

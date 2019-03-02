@@ -574,7 +574,7 @@
 
   },
   "localizedResources": {
-    "sp-client-custom-fields/strings": "../node_modules/sp-client-custom-fields/lib/loc/{locale}.js",
+    "sp-client-custom-fields/strings": "node_modules/sp-client-custom-fields/lib/loc/{locale}.js",
     "carousel3DStrings": "lib/webparts/carousel3D/loc/{locale}.js",
     "arcTextStrings": "lib/webparts/arcText/loc/{locale}.js",
     "tilesGalleryStrings": "lib/webparts/tilesGallery/loc/{locale}.js",
