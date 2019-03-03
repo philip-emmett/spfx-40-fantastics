@@ -19,7 +19,7 @@ import * as strings from 'TweetsFeedStrings';
 import { ITweetsFeedWebPartProps } from './ITweetsFeedWebPartProps';
 
 //Imports property pane custom fields
-import { PropertyFieldColorPickerMini } from 'sp-client-custom-fields/lib/PropertyFieldColorPickerMini';
+import { PropertyFieldColorPicker, PropertyFieldColorPickerStyle } from '@pnp/spfx-property-controls/lib/PropertyFieldColorPicker';
 
 var twttr: any = require('twitter');
 
@@ -144,22 +144,26 @@ export default class TweetsFeedWebPart extends BaseClientSideWebPart<ITweetsFeed
                 PropertyPaneToggle('transparent', {
                   label: strings.Transparent
                 }),
-                PropertyFieldColorPickerMini('linkColor', {
+                PropertyFieldColorPicker('linkColor', {
                   label: strings.LinkColor,
-                  initialColor: this.properties.linkColor,
+                  selectedColor: this.properties.linkColor,
                   onPropertyChange: this.onPropertyPaneFieldChanged,
-                  render: this.render.bind(this),
-                  disableReactivePropertyChanges: this.disableReactivePropertyChanges,
                   properties: this.properties,
+                  disabled: false,
+                  isHidden: false,
+                  alphaSliderHidden: false,
+                  style: PropertyFieldColorPickerStyle.Inline,
                   key: 'tweetsFeedLinkColorField'
                 }),
-                PropertyFieldColorPickerMini('borderColor', {
+                PropertyFieldColorPicker('borderColor', {
                   label: strings.BorderColor,
-                  initialColor: this.properties.borderColor,
+                  selectedColor: this.properties.borderColor,
                   onPropertyChange: this.onPropertyPaneFieldChanged,
-                  render: this.render.bind(this),
-                  disableReactivePropertyChanges: this.disableReactivePropertyChanges,
                   properties: this.properties,
+                  disabled: false,
+                  isHidden: false,
+                  alphaSliderHidden: false,
+                  style: PropertyFieldColorPickerStyle.Full,
                   key: 'tweetsFeedBorderColorField'
                 })
               ]

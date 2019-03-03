@@ -20,7 +20,7 @@ import { Environment, EnvironmentType } from '@microsoft/sp-core-library';
 import * as strings from 'AccordionStrings';
 import { IAccordionWebPartProps } from './IAccordionWebPartProps';
 
-import { PropertyFieldCustomList, CustomListFieldType } from 'sp-client-custom-fields/lib/PropertyFieldCustomList';
+import { PropertyFieldCollectionData, CustomCollectionFieldType } from '@pnp/spfx-property-controls/lib/PropertyFieldCollectionData';
 
 //Loads JQuery & JQuery UI
 require('jquery');
@@ -189,19 +189,21 @@ export default class AccordionWebPart extends BaseClientSideWebPart<IAccordionWe
             {
               groupName: strings.BasicGroupName,
               groupFields: [
-                PropertyFieldCustomList('tabs', {
+                PropertyFieldCollectionData('tabs', {
+                  key: 'tabs',
                   label: strings.Accordion,
+                  panelHeader: strings.ManageAccordion,
+                  manageBtnLabel: "Manage collection data",
                   value: this.properties.tabs,
-                  headerText: strings.ManageAccordion,
                   fields: [
-                    { id: 'Title', title: 'Title', required: true, type: CustomListFieldType.string }
+                    {
+                      id: "Title",
+                      title: "Title",
+                      type: CustomCollectionFieldType.string,
+                      required: true
+                    }
                   ],
-                  onPropertyChange: this.onPropertyPaneFieldChanged,
-                  render: this.render.bind(this),
-                  disableReactivePropertyChanges: this.disableReactivePropertyChanges,
-                  properties: this.properties,
-                  context: this.context,
-                  key: "accordionCustomListField"
+                  disabled: false
                 }),
                 PropertyPaneToggle('collapsible', {
                   label: strings.Collapsible,
